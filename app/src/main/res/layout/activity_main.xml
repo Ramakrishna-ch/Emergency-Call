@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:background="@drawable/icback"
+        android:text="EMERGENCY"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/icback"
+        android:paddingLeft="64dp"
+        android:text="CALL"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Be Alert! ##  Be Brave! ## Be Safe!"
+        android:textSize="16sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:layout_width="247dp"
+        android:layout_height="162dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:src="@drawable/icon"></ImageView>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="158dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginBottom="197dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/btn_rounded"
+        android:text="Login"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginBottom="136dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="or"
+        android:textSize="36sp"
+        android:textStyle="normal"></TextView>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="196dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="80dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/btn_rounded"
+        android:text="Register"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

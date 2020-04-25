@@ -1,14 +1,11 @@
-package com.androidtutorialshub.loginregister.helpers;
+package com.androidtutorialshub.Emergency_call.helpers;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.TextView;
 
 /**
  * Created by lalit on 9/13/2016.
@@ -29,18 +26,28 @@ public class InputValidation {
      * method to check InputEditText filled .
      *
      * @param textInputEditText
-     * @param textInputLayout
      * @param message
      * @return
      */
-    public boolean isInputEditTextFilled(EditText textInputEditText, TextView textInputLayout, String message) {
+    public boolean isInputEditTextFilled(EditText textInputEditText, String message) {
         String value = textInputEditText.getText().toString().trim();
-        if (value.isEmpty()) {
-            textInputLayout.setError(message);
-            hideKeyboardFrom(textInputEditText);
-            return false;
-        } else {
-            textInputLayout.setError(null);
+        if (message == "name") {
+            if (value.isEmpty()) {
+
+                hideKeyboardFrom(textInputEditText);
+                return false;
+            }
+        } else if (message == "email") {
+            if (value.isEmpty()) {
+
+                hideKeyboardFrom(textInputEditText);
+                return false;
+            }
+        } else if (message == "password") {
+            if (value.isEmpty()) {
+                hideKeyboardFrom(textInputEditText);
+                return false;
+            }
         }
 
         return true;
@@ -51,33 +58,25 @@ public class InputValidation {
      * method to check InputEditText has valid email .
      *
      * @param textInputEditText
-     * @param textInputLayout
-     * @param message
      * @return
      */
-    public boolean isInputEditTextEmail(EditText textInputEditText, TextView textInputLayout, String message) {
+    public boolean isInputEditTextEmail(EditText textInputEditText) {
         String value = textInputEditText.getText().toString().trim();
         if (value.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(value).matches()) {
-            textInputLayout.setError(message);
             hideKeyboardFrom(textInputEditText);
             return false;
-        } else {
-            textInputLayout.setError(null);
         }
 
         return true;
     }
 
-    public boolean isInputEditTextMatches(EditText textInputEditText1, EditText textInputEditText2, TextView textInputLayout, String message) {
+    public boolean isInputEditTextMatches(EditText textInputEditText1, EditText textInputEditText2) {
         String value1 = textInputEditText1.getText().toString().trim();
         String value2 = textInputEditText2.getText().toString().trim();
         if (!value1.contentEquals(value2)) {
-            textInputLayout.setError(message);
             hideKeyboardFrom(textInputEditText2);
             return false;
 
-        } else {
-            textInputLayout.setError(null);
         }
         return true;
     }

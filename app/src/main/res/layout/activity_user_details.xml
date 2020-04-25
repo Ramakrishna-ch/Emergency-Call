@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#660099"
+    android:orientation="vertical"
+    tools:context=".activities.UserDetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:text="USER  DETAILS"
+        android:textColor="#660099"
+        android:textSize="15sp"></TextView>
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="28dp"
+        android:background="@drawable/detailsbackview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="id"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/age1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Age"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/gender1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Gender"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Phone"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/relativeid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Relative no"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="22sp"></TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="154dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Log out"
+        android:textSize="25sp"></Button>
+
+
+</LinearLayout>

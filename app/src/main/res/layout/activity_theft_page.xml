@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF33"
+    tools:context=".activities.Disasterpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/detailsback">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/theft"></ImageView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Instructions To Use : \n\n\n \t 1.\tWhen someone involve in the theft or the action of stealing your belongings.\n\n\t 2.  Click on the Police Help Button"
+                    android:textColor="#000000"
+                    android:textSize="12sp"></TextView>
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/images"></ImageView>
+
+                <TextView
+                    android:id="@+id/thefttrigger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#006600"
+                    android:padding="10dp"
+                    android:text="Police Help"
+                    android:textSize="15sp"></TextView>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0066FF"
+                    android:padding="10dp"
+                    android:text="Safety Tips for alert from theft"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:id="@+id/theftlinkview"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/theftlink"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

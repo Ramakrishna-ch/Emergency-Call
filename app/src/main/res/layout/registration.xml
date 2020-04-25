@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regback"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/messageView"
+        android:layout_width="263dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/detailsback"
+        android:paddingLeft="10dp"
+        android:text="Enter User Details"
+        android:textColor="#000000"
+        android:textSize="26sp"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="444dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/textInputEditTextName"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Fullname"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/textInputEditTextEmail"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="E mail"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/textInputEditTextPassword"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="password"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/textInputEditTextConfirmPassword"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="confirm password"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Age"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Gender"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/phnumber"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Contact number"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Address"
+                android:textColor="#FFFFFF"></EditText>
+
+            <EditText
+                android:id="@+id/relativenu"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Relative Number"
+                android:textColor="#FFFFFF"></EditText>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/appCompatButtonRegister"
+        android:layout_width="174dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="15dp"
+        android:text="Register"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/appCompatTextViewLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="Already Registered? Login here"></TextView>
+
+
+</LinearLayout>

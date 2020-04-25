@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#990000"
+    tools:context=".activities.FirePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/detailsback">
+
+            <ImageView
+                android:id="@+id/fireicon"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/fire_icon"></ImageView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Instructions To Use : \n\n\n \t 1.\tIncase of any Fire Accident.\n\n\t 2.  Click on the Fire station Help Button"
+                    android:textColor="#000000"
+                    android:textSize="12sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/fireback">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/firestation"></ImageView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/firetrigger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#006600"
+                    android:padding="10dp"
+                    android:text="Fire Help"
+                    android:textSize="15sp"></TextView>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0066FF"
+                    android:padding="10dp"
+                    android:text="Fire Safety Tips"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:id="@+id/firelinkview1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/firelink1"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

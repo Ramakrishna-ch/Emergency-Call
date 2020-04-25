@@ -1,24 +1,18 @@
-package com.androidtutorialshub.loginregister.activities;
+package com.androidtutorialshub.Emergency_call.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.AppCompatTextView;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidtutorialshub.loginregister.R;
-import com.androidtutorialshub.loginregister.helpers.InputValidation;
-import com.androidtutorialshub.loginregister.sql.DatabaseHelper;
+import com.androidtutorialshub.Emergency_call.R;
+import com.androidtutorialshub.Emergency_call.helpers.InputValidation;
+import com.androidtutorialshub.Emergency_call.model.User;
+import com.androidtutorialshub.Emergency_call.sql.DatabaseHelper;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final AppCompatActivity activity = LoginActivity.this;
@@ -34,6 +28,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private InputValidation inputValidation;
     private DatabaseHelper databaseHelper;
+    private User user;
+    private boolean checkemail;
+    private boolean checkmail;
+    private boolean checkpass;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,29 +98,37 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      * This method is to validate the input text fields and verify login credentials from SQLite
      */
     private void verifyFromSQLite() {
-        if (!inputValidation.isInputEditTextFilled(textInputEditTextEmail, Messagelogin, getString(R.string.error_message_email))) {
-            return;
-        }
-        if (!inputValidation.isInputEditTextEmail(textInputEditTextEmail, Messagelogin, getString(R.string.error_message_email))) {
-            return;
-        }
-        if (!inputValidation.isInputEditTextFilled(textInputEditTextPassword, Messagelogin, getString(R.string.error_message_email))) {
-            return;
-        }
+        checkemail = inputValidation.isInputEditTextFilled(textInputEditTextEmail, "email");
+        checkmail = inputValidation.isInputEditTextEmail(textInputEditTextEmail);
+        checkpass = inputValidation.isInputEditTextFilled(textInputEditTextPassword, "password");
 
-        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
-                , textInputEditTextPassword.getText().toString().trim())) {
-
-
-            Intent accountsIntent = new Intent(activity, UsersListActivity.class);
-            accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
-            emptyInputEditText();
-            startActivity(accountsIntent);
-
+        if (!checkemail) {
+            Toast.makeText(LoginActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
 
         } else {
-            // Snack Bar to show success message that record is wrong
-            Toast.makeText(LoginActivity.this, "Wrong Email or password", Toast.LENGTH_SHORT).show();
+            if (!checkpass) {
+                Toast.makeText(LoginActivity.this, "Enter password", Toast.LENGTH_SHORT).show();
+
+            } else {
+                if (!checkpass) {
+                    Toast.makeText(LoginActivity.this, "Enter valid email", Toast.LENGTH_SHORT).show();
+
+                } else {
+
+                    if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
+                            , textInputEditTextPassword.getText().toString().trim())) {
+                        Toast.makeText(LoginActivity.this, "login Successful", Toast.LENGTH_SHORT).show();
+                        Intent detailsint = new Intent(activity, MainPageApp.class);
+                        detailsint.putExtra("message-key", textInputEditTextEmail.getText().toString().trim());
+                        emptyInputEditText();
+                        startActivity(detailsint);
+
+                    } else {
+                        // Snack Bar to show success message that record is wrong
+                        Toast.makeText(LoginActivity.this, "Wrong Email or password", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
         }
     }
 

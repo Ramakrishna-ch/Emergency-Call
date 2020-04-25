@@ -1,4 +1,4 @@
-package com.androidtutorialshub.loginregister.model;
+package com.androidtutorialshub.Emergency_call.model;
 
 /**
  * Created by lalit on 9/12/2016.
@@ -9,10 +9,19 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private int age;
-    private int number;
+    private String age;
+    private String number;
     private String address;
     private String gender;
+    private String relative;
+
+    public String getRelative() {
+        return relative;
+    }
+
+    public void setRelative(String relative) {
+        this.relative = relative;
+    }
 
     public int getId() {
         return id;
@@ -46,19 +55,19 @@ public class User {
         this.password = password;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

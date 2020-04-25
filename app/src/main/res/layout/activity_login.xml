@@ -7,6 +7,7 @@
     android:background="@drawable/loginback"
     tools:context=".activities.LoginActivity">
 
+
     <TextView
         android:id="@+id/messageloginView"
         android:layout_width="wrap_content"
@@ -14,10 +15,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:text="sample"></TextView>
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/fireback"
+        android:padding="10dp"
+        android:text="Enter Your Credentials"
+        android:textSize="25sp"></TextView>
 
     <EditText
         android:id="@+id/textInputEditTextPassword"

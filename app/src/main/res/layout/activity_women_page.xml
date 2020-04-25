@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006600"
+    tools:context=".activities.WomenPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/detailsback">
+
+            <ImageView
+                android:id="@+id/womenicon"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/women_icon"></ImageView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Instructions To Use : \n\n\n \t 1.\tPut ON the GPS or Location ON so as to\n\n \t \t \ttrack the live location of your mobile \n\n\t\t\tphone.\n\n\t 2.  When someone tries to harass you or miss\n\n\t\t   behave with you."
+                    android:textColor="#000000"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:background="#006600"
+                    android:padding="10dp"
+                    android:text="Shake your Phone two times"
+                    android:textSize="15sp"></TextView>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/shake"></ImageView>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0066FF"
+                    android:padding="10dp"
+                    android:text="Safety Tips for Women"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="     1.     Be aware of your surroundings. Don’t let your guard down\nIf things seem even a slight unsafe get out of that place immediately\n\n\t\t2.       Please trust and make good use of your ‘gut feel’ or ‘intuition’ or ‘sixth sense’ in each  every place and situation
+
+\n    There will invariably be signs, however small or seemingly insignificant, that tell or alarm you that all is just not OK. You may not understand it or be able to analyze it consciously, but please do NOT ignore it. It is your personal threat alarm beeping\n\n\t\t3.       Don’t take eve teasing lightly
+
+\n\t\t\ta.       Respond with a stern voice
+
+\n\t\t\tb.      Threaten to take a picture which might scare them away
+
+\n\t\t\tc.       If the eve teasing still persists then immediately raise your voice to gather a crowd\n\n\t\t4.       As much as possible avoid late night travel using public transport
+
+                \n\t\t\ta.       If avoiding is not possible then be sure to travel only on crowded bus
+
+                \n\t\t\tb.      Avoid taking road side cabs
+
+                \n\t\t\tc.       Avoid using a bus which has no passenger or few passenger\n\n\t\t5.       While using 2 wheeler be sure to wear helmet at all times (especially at night). Don’t stop for any stranger
+
+\n\t\t\ta.       In case attacked, use your helmet to defend yourself."
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detailsback">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0066FF"
+                    android:padding="10dp"
+                    android:text="Self Defence Techniques for Women"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:id="@+id/linkview1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/link1"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText"></TextView>
+
+                <TextView
+                    android:id="@+id/linkview2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/link2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</ScrollView>
